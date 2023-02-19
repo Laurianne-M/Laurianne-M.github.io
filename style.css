@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+}
+
+
+body{
+  background-color: #03111E;
+}
+
+header,footer{
+    background-color: white;
+    color: #242424;
+    padding: 20px 50px 20px 50px;
+}
+
+.cta{
+    background: linear-gradient(90deg,#FF4E50,#F9D423);
+    border-radius: 50px;
+    color: #F9F8FF;
+    display: inline-block;
+    padding: 20px 20px;
+    margin-top: 30px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.competences{
+    border-right: 1px #FF4E50 solid;
+    border-bottom: 1px #FF4E50 solid;
+    padding: 50px;
+    color: #F9F8FF;
+}
+
+
+
+em{
+    color: #FF4E50;
+    font-style: normal;
+}
+
+p{
+    font-size: 1.1em;
+    font-family: 'Manrope', sans-serif;
+    color: #F9F8FF;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    color:#FF4E50;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1em;
+    color: #F9F8FF;
+}
+
+.a-propos-main .cta{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 80px;
+    
+}
+
+.a-propos-main ul{
+    margin-top: 80px;
+    margin-bottom: 1px;
+}
+
+
+
+a:hover{
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+  font-size: 2em;
+    color: #FF4E50;
+    font-weight: bold;
+}
+
+nav .logo{
+  font-size: 2em;
+    color: #FF4E50;
+    font-weight: bold
+}
+
+.cta:hover{
+    text-decoration: none;
+    background: linear-gradient(90deg,#FF5F6D,#FFC371);
+    transition: 3s;
+}
+
+.icones:hover{
+    opacity: 0.5;
+}
+
+section{
+    padding: 80px;
+}
+
+.a-propos-main{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.a-propos-main h2,ul{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.logo:hover{
+    opacity: 0.5;
+}
+
+
+
+.portfolio h2{
+    color: black;
+    text-align: center;
+}
+
+.a-propos-main h1,h2{
+    text-align: center;
+    color: #FF4E50;
+}
+
+
+footer,nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+footer img{
+  width: 40px;
+  height: 40px;
+}
+
+nav a {
+    margin-left: 30px;
+  }
+
+  footer p{
+    color: #03111E;
+  }
+
+  footer div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+
+.presentation{
+    display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  align-items: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 430px;
+  gap: 50px;
+  padding-top: 80px;
+}
+
+.mes-projets {
+  background:white;
+  }
+  
+  .mes-projets h2{
+    color: #242424;
+    text-align: left;
+  }
+  
+  .grid-projets img {
+    width: 100%;
+    height: 100%;
+    /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(255,78,80, 0.09),
+  6.7px 6.7px 5.3px rgba(255,78,80, 0.028),
+  12.5px 12.5px 10px rgba(255,78,80, 0.035),
+  22.3px 22.3px 17.9px rgba(255,78,80, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+  }
+
+
+  .grid-projets {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-rows: 300px 300px;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+
+  
+  .presentation h1{
+    padding-bottom: 20px;
+  }
+
+  .presentation div{
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+  }
+
+  .presentation img{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  }
+
+ .lien-conteneur-photo{
+    position: relative;
+ }
+
+  .mes-projets .photo-over{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(90deg,rgba(255,78,80,0.8),rgba(249,212,35,0.8));
+    border-radius: 6px;
+    font-size: 1.5em;
+    display: none;
+  }
+
+  .lien-conteneur-photo:hover .photo-over{
+    display: flex;
+  }
+
+  
+
+.mes-icones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.mes-icones div{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 15px;
+}
+
+  .mes-competences h2 {
+    color: #FF5F6D;
+    margin-bottom: 60px;
+  }
+
+  .mes-competences img{
+    width: 100px;
+    height: 100px;
+  }
+
+  input,
+textarea {
+padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+
+
+  .mes-competences .cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    margin-top: 60px;
+  }
+
+  textarea{
+    padding-bottom: 120px;
+  }
+
+  @media screen and (max-width : 996px) {
+
+    h1{
+      font-size: 2em;
+    }
+
+    h2{
+      font-size: 1.5em;
+    }
+    .tarifs{
+      display: none;
+    }
+
+    section{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+
+    nav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .presentation{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 80px;
+    }
+
+    .presentation div{
+      order: 2;
+      position: relative;
+      left: 2px;
+    }
+
+    .presentation p{
+      font-size: 1.2em;
+    }
+    
+    .presentation img{
+      order: 1;
+      width: 100%;
+    }
+
+
+    .mes-icones{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-right: 0;
+    }
+
+
+
+    .grid-projets {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
+    .a-propos-main{
+      width: 75%;
+    }
+
+    .portfolio div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+
+    
+
+  }
